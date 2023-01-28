@@ -1,0 +1,75 @@
+@font-face {
+	font-family: "DIN Alternate Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: url("fonts/DINAlternate-Bold.woff") format("woff");
+}
+
+html,
+body {
+	margin: 0;
+	background-color: #ebebeb;
+}
+table,
+tr,
+th,
+td {
+	border: 0.1vh solid;
+}
+.logo {
+	border: 0.2vh solid;
+	background-color: #0099ff;
+	color: white;
+	border-color: black;
+	float: left;
+	height: 20vh;
+	width: 29.98vw;
+	margin-top: 0;
+	clear: both;
+	position: absolute;
+}
+.welcome {
+	border: 0.2vh solid;
+	background-color: #ff9300;
+	color: white;
+	border-color: black;
+	float: left;
+	height: 20vh;
+	width: 70vw;
+	margin-top: 0;
+	clear: both;
+	position: relative;
+	left: 30vw;
+}
+table {
+	position: absolute;
+	top: 20vh;
+	width: 70vw;
+}
+
+.blue_highlight {
+	background-color: #0099ff;
+}
+.orange_highlight {
+	background-color: #ff9300;
+}
+.add_task_details {
+	float: left;
+	position: absolute;
+	top: 20vh;
+	left: 75vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+td,
+tr,
+th {
+	font-family: "DIN Alternate Bold";
+}

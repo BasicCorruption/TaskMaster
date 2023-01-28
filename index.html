@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+		/>
+		<link href="styles.css" rel="stylesheet" />
+		<script src="TableHandler.js"></script>
+		<script src="ClockHandler.js"></script>
+		<script src="Saves.js"></script>
+		<title>TaskMaster</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<h1 id="logo_text">TaskMaster</h1>
+			</div>
+			<div class="welcome">
+				<div><h1 id="welcome-msg">Welcome back!</h1></div>
+			</div>
+			<div class="tasks">
+				<table id="tasks_table">
+					<tr>
+						<th>Tasks</th>
+					</tr>
+					<tr>
+						<th>Sunday</th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+						<th>Saturday</th>
+					</tr>
+				</table>
+			</div>
+			<div class="add_task_details">
+				<h5>Add Task (Info)</h5>
+				<p>Task Priority</p>
+				<input type="text" id="taskpri" /><br />
+				<p>Task Date (MMDDYYYY)</p>
+				<input type="text" id="taskdate" /><br />
+				<p>Task Title</p>
+				<input type="text" id="tasktitle" /><br />
+				<p>Task Description</p>
+				<input type="text" id="taskdesc" /> <br />
+				<button id="add_task">Add Task</button>
+			</div>
+		</div>
+	</body>
+</html>
